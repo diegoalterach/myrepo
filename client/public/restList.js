@@ -47,7 +47,7 @@ function loadTable() {
 	});
 }
 
-$(document).ready(loadTable);
+
 
 function returnNationality(id){
 	return nationalities.get(id);
@@ -60,6 +60,8 @@ function returnPlace(id){
 function returnSex(id){
 	return sex.get(id);
 }
+
+$(document).ready(loadTable);
 
 function newDeletePerson(id){
 	fetch('http://localhost:8080/deleteperson/'+id, {
