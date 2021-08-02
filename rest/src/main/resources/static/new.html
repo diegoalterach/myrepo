@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New Person</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+  <script src="new.js"></script>
+</head>
+
+<body>
+	<h1>Nova pessoa</h1>
+	
+	<span id="formErrors" style="color:red"></span>
+	<ul id="errorList">
+	</ul>
+	<br/>
+	
+	<form id="personForm">
+		<input type="hidden" id="id"/>
+		nome:<input type="text" id="name"/><br /> 
+		cpf:<input type="text" id="cpf"/><br /> 
+		email:<input type="text" id="email"/><br /> 
+		data nacimento:<input type="text" id="birthDate"/>
+		<br /> <br /> 
+		Nacionalidade: <select id="nationalities"/></select> <br /> 
+		Naturalidade:<select id="places"></select> <br />
+		<br /> Sexo: <br />
+		<div id="sexdiv">
+		</div>
+		<br />
+		<br /> <input value="ENVIAR" type="button" onclick="newSendForm()"/>
+	</form><br/>
+		<a href="list.html">Voltar pro listado</a>
+	
+	<label id="error"></label>
+</body>
+</html>
